@@ -1,0 +1,21 @@
+* {
+  color: #181818;
+  background-color: #fff;
+  font-family: Roboto;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border_box;
+          box-sizing: border_box;
+}
+
+html {
+  font-size: 15px;
+  min-height: 100vh;
+}
+
+body {
+  font-weight: 400;
+  line-height: 1.8rem;
+  background-size: cover;
+}
+/*# sourceMappingURL=style.css.map */

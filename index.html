@@ -4,68 +4,70 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap -->
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     />
+    <!-- Font awesome -->
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/style.css" />
     <title>Tabula layout</title>
   </head>
   <body>
-    <header class="header">
-      <div class="header__container">
-        <div class="nav">
+    <header class="top_header" id="topHeader">
+      <div class="top_header__container">
+        <div class="nav" id="topNav">
           <div class="logo">
             <a href="http://tabula.bold-themes.com/wavy/">
               <img src="./assets/img/crest.png" alt="logo" />
             </a>
           </div>
           <div class="top__menu">
-            <nav class="nav">
-              <ul class="nav__menu">
-                <li class="nav__menu__item">
-                  <a href="http://tabula.bold-themes.com/wavy/">Home</a>
-                </li>
-                <li class="nav__menu__item">
-                  <a href="http://tabula.bold-themes.com/wavy/">About</a>
-                </li>
-                <li class="nav__menu__item">
-                  <a href="http://tabula.bold-themes.com/wavy/">Courses</a>
-                </li>
-                <li class="nav__menu__item">
-                  <a href="http://tabula.bold-themes.com/wavy/">Blog</a>
-                </li>
-                <li class="nav__menu__item">
-                  <a href="http://tabula.bold-themes.com/wavy/">Shop</a>
-                </li>
-                <li class="nav__menu__item">
-                  <a href="http://tabula.bold-themes.com/wavy/">Elements</a>
-                </li>
-              </ul>
-            </nav>
+            <ul class="nav__menu">
+              <li class="nav__menu__item">
+                <a href="http://tabula.bold-themes.com/wavy/">Home</a>
+              </li>
+              <li class="nav__menu__item">
+                <a href="http://tabula.bold-themes.com/wavy/">About</a>
+              </li>
+              <li class="nav__menu__item">
+                <a href="http://tabula.bold-themes.com/wavy/">Courses</a>
+              </li>
+              <li class="nav__menu__item">
+                <a href="http://tabula.bold-themes.com/wavy/">Blog</a>
+              </li>
+              <li class="nav__menu__item">
+                <a href="http://tabula.bold-themes.com/wavy/">Shop</a>
+              </li>
+              <li class="nav__menu__item">
+                <a href="http://tabula.bold-themes.com/wavy/">Elements</a>
+              </li>
+            </ul>
             <div class="top__menu__info">
               <div class="top__menu__info__cell">
                 <div class="top__menu__info__widget">
-                  <a href="#">
-                    <div class="phoneNumIcon">
-                      <i class="fal fa-phone"></i>
-                      <span class="phoneNumText">(+1) 555 234-8765</span>
-                    </div>
-                  </a>
+                  <button class="filled__button">
+                    <i class="fa fa-phone" aria-hidden="true"></i>
+                    (+1) 555 234-8765
+                  </button>
                 </div>
                 <a
                   href="https://twitter.com/bold_themes"
                   class="top__menu__info__widget"
                 >
                   <div class="topMenuInfoIcon">
-                    <i class="fab fa-twitter"></i>
+                    <i class="fa fa-twitter" aria-hidden="true"></i>
                   </div>
                 </a>
                 <a
@@ -73,7 +75,7 @@
                   class="top__menu__info__widget"
                 >
                   <div class="topMenuInfoIcon">
-                    <i class="fab fa-facebook-f"></i>
+                    <i class="fa fa-facebook" aria-hidden="true"></i>
                   </div>
                 </a>
                 <a
@@ -81,15 +83,82 @@
                   class="top__menu__info__widget"
                 >
                   <div class="topMenuInfoIcon">
-                    <i class="fab fa-youtube"></i>
+                    <i class="fa fa-youtube-play" aria-hidden="true"></i>
                   </div>
                 </a>
                 <a href="#" class="top__menu__info__widget">
                   <div class="topMenuInfoIcon">
-                    <i class="fab fa-instagram"></i>
+                    <i class="fa fa-instagram" aria-hidden="true"></i>
                   </div>
                 </a>
               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <header class="sticky__header" id="stickyHeader">
+      <div class="sticky__header__container">
+        <div class="top__menu">
+          <nav class="nav">
+            <ul class="nav__menu">
+              <li class="nav__menu__item">
+                <a href="http://tabula.bold-themes.com/wavy/">Home</a>
+              </li>
+              <li class="nav__menu__item">
+                <a href="http://tabula.bold-themes.com/wavy/">About</a>
+              </li>
+              <li class="nav__menu__item">
+                <a href="http://tabula.bold-themes.com/wavy/">Courses</a>
+              </li>
+              <li class="nav__menu__item">
+                <a href="http://tabula.bold-themes.com/wavy/">Blog</a>
+              </li>
+              <li class="nav__menu__item">
+                <a href="http://tabula.bold-themes.com/wavy/">Shop</a>
+              </li>
+              <li class="nav__menu__item">
+                <a href="http://tabula.bold-themes.com/wavy/">Elements</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="top__menu__info">
+            <div class="top__menu__info__cell">
+              <div class="top__menu__info__widget">
+                <button class="filled__button">
+                  <i class="fa fa-phone" aria-hidden="true"></i>
+                  (+1) 555 234-8765
+                </button>
+              </div>
+              <a
+                href="https://twitter.com/bold_themes"
+                class="top__menu__info__widget"
+              >
+                <div class="topMenuInfoIcon">
+                  <i class="fa fa-twitter" aria-hidden="true"></i>
+                </div>
+              </a>
+              <a
+                href="https://www.facebook.com/boldthemes/"
+                class="top__menu__info__widget"
+              >
+                <div class="topMenuInfoIcon">
+                  <i class="fa fa-facebook" aria-hidden="true"></i>
+                </div>
+              </a>
+              <a
+                href="https://www.youtube.com/channel/UCPL5LgX32KsbQ1i9nV-xiKA"
+                class="top__menu__info__widget"
+              >
+                <div class="topMenuInfoIcon">
+                  <i class="fa fa-youtube-play" aria-hidden="true"></i>
+                </div>
+              </a>
+              <a href="#" class="top__menu__info__widget">
+                <div class="topMenuInfoIcon">
+                  <i class="fa fa-instagram" aria-hidden="true"></i>
+                </div>
+              </a>
             </div>
           </div>
         </div>
@@ -110,6 +179,12 @@
             </div>
           </div>
         </div>
+      </div>
+      <div class="top__cover__img">
+        <img src="./assets/img/yellow_top_wave_01.png" alt="cover">
+      </div>
+      <div class="bottom__cover__img">
+        <img src="./assets/img/Violet_top_left_wave.png" alt="">
       </div>
     </section>
     <section class="our__team">
@@ -186,6 +261,7 @@
             </div>
           </div>
         </div>
+        <div class="spacing__row"></div>
         <div class="our__team__row">
           <div class="our__team__cell">
             <div class="cell__container">
@@ -255,6 +331,9 @@
           </div>
         </div>
       </div>
+      <div class="bottom__cover__img">
+        <img src="./assets/img/Wave_White_bottom_right_shape_01.png" alt="">
+      </div>
     </section>
     <section class="your__course">
       <div class="your__course__container">
@@ -273,11 +352,15 @@
               <div class="form__contact__row">
                 <div class="contact__name">
                   <i class="far fa-user"></i>
-                  <input type="text" placeholder="Name" class="input__field">
+                  <input type="text" placeholder="Name" class="input__field" />
                 </div>
                 <div class="contact__email">
                   <i class="far fa-envelope"></i>
-                  <input type="email" placeholder="E-mail" class="input__field">
+                  <input
+                    type="email"
+                    placeholder="E-mail"
+                    class="input__field"
+                  />
                 </div>
               </div>
               <div class="form__contact__row">
@@ -294,11 +377,16 @@
               <div class="form__contact__row">
                 <div class="contact__message">
                   <i class="far fa-comment-alt-lines"></i>
-                  <textarea cols="40" rows="10" class="input__field" placeholder="Message"></textarea>
+                  <textarea
+                    cols="40"
+                    rows="10"
+                    class="input__field"
+                    placeholder="Message"
+                  ></textarea>
                 </div>
               </div>
               <div class="form__contact__button">
-                <input type="submit" value="SEND" class="filled__button">
+                <input type="submit" value="SEND" class="filled__button" />
               </div>
             </div>
           </div>
@@ -330,13 +418,22 @@
               <a href="https://twitter.com/bold_themes" class="social__icon">
                 <i class="fab fa-twitter"></i>
               </a>
-              <a href="https://www.instagram.com/bold_themes/" class="social__icon">
+              <a
+                href="https://www.instagram.com/bold_themes/"
+                class="social__icon"
+              >
                 <i class="fab fa-instagram"></i>
               </a>
-              <a href="https://www.facebook.com/boldthemes/" class="social__icon">
+              <a
+                href="https://www.facebook.com/boldthemes/"
+                class="social__icon"
+              >
                 <i class="fab fa-twitter"></i>
               </a>
-              <a href="https://www.youtube.com/channel/UCPL5LgX32KsbQ1i9nV-xiKAs" class="social__icon">
+              <a
+                href="https://www.youtube.com/channel/UCPL5LgX32KsbQ1i9nV-xiKAs"
+                class="social__icon"
+              >
                 <i class="fab fa-youtube"></i>
               </a>
             </div>
@@ -388,8 +485,12 @@
               <h5>Newsletter</h5>
             </div>
             <div class="cell__buttons">
-              <input type="email" placeholder="Your email" class="outline_input">
-              <input type="submit" value="SUBSCRIBE" class="filled__button">
+              <input
+                type="email"
+                placeholder="Your email"
+                class="outline_input"
+              />
+              <input type="submit" value="SUBSCRIBE" class="filled__button" />
             </div>
           </div>
         </div>
@@ -404,5 +505,6 @@
 
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="./controller/index.js"></script>
   </body>
 </html>

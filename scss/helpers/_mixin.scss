@@ -36,7 +36,7 @@
   padding: $pd-y $pd-x;
 }
 
-@mixin horizontalLayout($dpl, $flx-d, $adj,) {
+@mixin horizontalLayout($dpl, $flx-d, $adj) {
   display: $dpl;
   flex-direction: $flx-d;
   margin: 0;

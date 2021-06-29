@@ -29,7 +29,7 @@
   text-decoration: none;
 }
 
-@mixin verticalLayout ($dpl, $flx-d, $mg-y, $mg-x, $pd-x, $pd-y) {
+@mixin verticalLayout ($dpl, $flx-d, $mg-y, $mg-x, $pd-y, $pd-x) {
   display: $dpl;
   flex-direction: $flx-d;
   margin: $mg-y $mg-x;

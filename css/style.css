@@ -361,6 +361,31 @@ body {
   margin-left: 11.7px;
 }
 
+.vertical__header {
+  display: none;
+  background-color: #fff;
+  -webkit-transition: -webkit-transform 1s cubic-bezier(0.23, 1, 0.32, 1);
+  transition: -webkit-transform 1s cubic-bezier(0.23, 1, 0.32, 1);
+  transition: transform 1s cubic-bezier(0.23, 1, 0.32, 1);
+  transition: transform 1s cubic-bezier(0.23, 1, 0.32, 1), -webkit-transform 1s cubic-bezier(0.23, 1, 0.32, 1);
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  -webkit-box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+          box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  position: fixed;
+  width: 320px;
+  clear: both;
+  z-index: 101;
+  padding: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+  left: 0;
+}
+
 .carousel {
   position: relative;
   display: block;
